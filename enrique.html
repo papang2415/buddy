@@ -1,0 +1,330 @@
+ Enrique Siarot 9:03 PM (23 minutes ago) to me
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>One Piece</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./../src/style.css"> -->
+    <!-- <link rel="icon" href="./../src/icon.png"> -->
+</head>
+
+<body style="background-color: black;">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+        body {
+            font-family: Arial;
+            padding: 10%;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* Style the tab */
+        
+        .tab {
+            overflow: hidden;
+        }
+        /* Style the buttons inside the tab */
+        
+        .tab button {
+            background-color: inherit;
+            float: center;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 10px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        /* Change background color of buttons on hover */
+        
+        .tab button:hover {
+            background-color: rgb(77, 65, 65);
+            border-radius: 13px;
+        }
+        /* Create an active/current tablink class */
+        
+        .tab button.active {
+            background-color: rgb(77, 65, 65);
+            border-radius: 13px;
+            border: 2px solid rgb(171, 230, 10);
+        }
+        /* Style the tab content */
+        
+        .castContent {
+            display: none;
+            border-top: none;
+            margin-top: 5%;
+            float: center;
+            background-color: gray;
+            border-radius: 13px;
+            border: 2px solid rgb(171, 230, 10);
+            padding-bottom: 8%;
+            margin-left: 8%;
+            height: 100%;
+            margin-right: 8%;
+        }
+        
+        .header {
+            margin-top: -10%;
+            margin-bottom: 3%;
+        }
+        
+        .gif {
+            margin-top: 1%;
+            float: left;
+            padding: 2%;
+        }
+        
+        .side {
+            margin-top: 3%;
+            width: 80%;
+            text-align: justify;
+            float: rigth;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            border-radius: 13px;
+        }
+        
+        .summary {
+            text-align: justify;
+            float: center;
+            padding: 3%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        
+        .above {
+            color: black;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 20PX
+        }
+    </style>
+    <div class="header">
+        <!-- <img src="./../src/efe.png" style="  height: 50%; width: 50%;"> -->
+
+    </div>
+    <div class="above">
+        <h1>MAIN CHARACTERS</h1>
+    </div>
+    <div class="tab">
+        <button class="viewCast" onclick="clickCast(event, 'luffy')"><img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864,0,1728,2304&wid=600&hei=800&scl=2.88" style="  height: 230px; width: 130px;"
+                alt=""></button>
+        <button class="viewCast" onclick="clickCast(event, 'vinsmoke')"><img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864,0,1728,2304&wid=600&hei=800&scl=2.88" style="  height: 230px; width: 130px;"
+                alt=""></button>
+        <button class="viewCast" onclick="clickCast(event, 'Nami')"><img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864,0,1728,2304&wid=600&hei=800&scl=2.88" style="  height: 230px; width: 130px;"
+                alt=""></button>
+        <button class="viewCast" onclick="clickCast(event, 'Tony')"><img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864,0,1728,2304&wid=600&hei=800&scl=2.88" style="  height: 230px; width: 130px;"
+                alt=""></button>
+        <button class="viewCast" onclick="clickCast(event, 'Zoro')"><img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864,0,1728,2304&wid=600&hei=800&scl=2.88" style="  height: 230px; width: 130px;"
+                alt=""></button>
+        <button class="viewCast" onclick="clickCast(event, 'rubin')"><img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864,0,1728,2304&wid=600&hei=800&scl=2.88" style="  height: 230px; width: 130px;"
+                alt=""></button>
+
+    </div>
+    <div id="description" style="color:white ; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+        <p> <br> <br> One Piece | Manga series <br> One Piece is a Japanese manga series written and illustrated by Eiichiro Oda. <br> It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen <br> Jump since July 1997, with its individual
+            chapters compiled into <br> 101 tankōbon volumes as of December 2021. <br> Author: Eiichiro Oda <br> Volumes: 101 (List of volumes) <br> Published by: Shueisha <br> Genre: Adventure, fantasy <br> English publisher: NA Viz Media <br>
+        </p>
+    </div>
+    <div id="luffy" class="castContent">
+        <div class="gif ">
+            <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864,0,1728,2304&wid=600&hei=800&scl=2.88 " style=" height: 350px; width: 400px; " alt=" ">
+        </div>
+        <div class="side ">
+            <h1>Monkey D. Luffy</h1>
+            <p>
+                Description: <br> Monkey D. Luffy, also known as "Straw Hat " Luffy, is a fictional character and the main protagonist of the One Piece manga series, created by Eiichiro Oda <br> Last known bounty (in Belly): 500,000,000 <br> Devil fruit:
+                Gomu Gomu no Mi <br> Date of birth: May 5 <br> Age: 19 <br> Voiced by: Mayumi Tanaka (Toei Animation), Colleen Clinkenbeard (Funimation) <br> Brothers: Portgas D. Ace (Adopted Brother), Sabo (Adopted Brother) <br> Haki power: Busoshoku
+                Haki, Haoshoku Haki, Kenbunshoku Haki, Elasticity, Superhuman speed
+
+
+            </p>
+        </div>
+        <div class="summary ">
+            <h3>Summary:</h3>
+            <p>
+                Monkey D. Luffy (/ˈluːfi/ LOO-fee) (Japanese: モンキー・D・ルフィ) , also known as "Straw Hat " Luffy, is a fictional character and the main protagonist of the One Piece manga series, created by Eiichiro Oda. Luffy made his debut in One Piece Chapter #1 as a young
+                boy who acquires the properties of rubber after accidentally eating the supernatural Gum-Gum Fruit, one of the Devil Fruits. Luffy dreamt of being a pirate since childhood from the influence of "Red-Haired " Shanks. At the age of 17, Luffy
+                sets sail from the East Blue Sea to the Grand Line in search of the legendary treasure, One Piece, to succeed Gol D. Roger as "King of the Pirates ". Luffy, captain of the Straw Hat Pirates, recruits crew members Roronoa Zoro, Nami, Usopp,
+                Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, and Jimbei. He fights antagonists, and aids and befriends the inhabitants of several islands on his journey. Usually cheerful, he becomes serious and even aggressive when he fights.
+                Luffy uses his elasticity to concentrate his power, executing a range of attacks. In his signature attack, Gum-Gum Pistol, he slingshots punches at opponents from a distance. Luffy also grows stronger over the course of the story, as reflected
+                in his "bounty ", which is used to measure the threat he poses to the World Government.
+            </p>
+        </div>
+    </div>
+
+    <div id="vinsmoke" class="castContent">
+        <div class="gif ">
+            <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864,0,1728,2304&wid=600&hei=800&scl=2.88 " style=" height: 350px; width: 300px; " alt=" ">
+        </div>
+        <div class="side ">
+            <h1>Vinsmoke Sanji</h1>
+            <p>
+
+
+                Description: <br> Vinsmoke Sanji, also known as "Black Leg " Sanji, is a fictional character in the One Piece franchise created by Eiichiro Oda. A native to the North Blue, Sanji grew up as part of the Vinsmoke family under his father
+                Vinsmoke Judge, king of the Germa Kingdom, and mother Vinsmoke Sora. Wikipedia Last known bounty (in Belly): 177,000,000 <br> Age: 19 (debut); 21 (after the timeskip) <br> Date of birth: March 2 <br> Voiced by: Hiroaki Hirata (Toei Animation),
+                Eric Vale (Funimation), Ikue Ōtani (Toei Animation), Christine Auten (Funimation) <br> Fighting style: <br> Black Leg Style. Under Zeff's strict tutelage Sanji became an extremely powerful master of a kick-based martial art he created
+                named the "Black Leg Style " which is a unique combination of Brazilian Capoeira, French Savate, and Korean Taekwondo, able to use powerful kicks with supreme versatility.
+
+            </p>
+
+        </div>
+        <div class="summary ">
+            <h3>Summary:</h3>
+            <p>
+                Vinsmoke Sanji (ヴィンスモーク・サンジ Vinsumōku Sanji), also known as "Black Leg " Sanji is a fictional character in the One Piece franchise created by Eiichiro Oda. A native to the North Blue, Sanji grew up as part of the Vinsmoke family under his father Vinsmoke
+                Judge, king of the Germa Kingdom, and mother Vinsmoke Sora Living under a grueling father who only saw Sanji as a soldier, he escapes to Baratie where he learns to cook under “Red Leg” Zeff and learns his fighting style, which is characterized
+                by the use of legs in combat. Sanji is the fifth member and the fourth to join Monkey D. Luffy’s pirate crew as cook after the battle against Don Kreig. Sanji currently has a bounty of Berrysymbol.gif330,000,000 after escaping Big Mom
+                from Whole Cake Island. His previous bounties were Berrysymbol.gif77,000,000 after the attack on Enies Lobby and Berrysymbol.gif177,000,000 after the events at the Dressrosa kingdom.
+            </p>
+        </div>
+
+
+    </div>
+
+
+    <div id="Nami" class="castContent">
+        <div class="gif ">
+            <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864,0,1728,2304&wid=600&hei=800&scl=2.88 " style=" height: 350px; width: 300px; " alt=" ">
+        </div>
+        <div class="side ">
+            <h1>Nami</h1>
+            <p>
+
+
+                Description: <br> Nami is a fictional character in the One Piece franchise created by Eiichiro Oda. She is based on Ann and Silk, two characters from Oda's previous manga Romance Dawn. She is introduced as a thief and pickpocket who possesses
+                cartographical, meteorological, and navigational skills. <br> Last known bounty (in Belly): 66,000,000 <br> Date of birth: July 3 <br> Relatives: Bellemere (adoptive mother); Nojiko (adoptive sister) <br> Created by: Eiichiro Oda <br>                Voiced by: Akemi Okamura (Toei Animation), Luci Christian (Funimation), Wakana Yamazaki (Toei Animation) <br> Age: Age 18 years old (Debut) 20 years old (after timeskip) <br> Height: 169 cm (5'6½") 170 cm (5 '7") <br> Species: Human <br>                Birthday: July 3rd, 1504 (Cancer) <br>
+
+
+            </p>
+
+        </div>
+        <div class="summary">
+            <h3>Summary:</h3>
+            <p>
+                Nami (Japanese: ナミ, Japanese: [na̠mʲi]) is a fictional character in the One Piece franchise created by Eiichiro Oda. She is based on Ann and Silk, two characters from Oda's previous manga Romance Dawn. She is introduced as a thief and pickpocket who possesses
+                cartographical, meteorological, and navigational skills. At first, she is a subordinate of the fishman Arlong, but she is eventually freed of this service and permanently joins Monkey D. Luffy to fulfill her dream of creating a complete
+                map of the Grand Line. In the series, Nami is the Straw Hat Pirates ' navigator, who dreams of drawing a map of the entire world. Despite her initial distrust of pirates, Nami eventually changes her mind after being around Luffy and the
+                rest of the crew. Nami is depicted as an intelligent girl who is obsessed with obtaining money. She is able to use her three-sectioned staff and her climate skills to create powerful attacks; the most prominent of these staff weapons is
+                the Clima-Tact, in which she manipulates the climate to create weather-based attacks.
+            </p>
+        </div>
+
+    </div>
+    <div id="Tony" class="castContent">
+        <div class="gif">
+            <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864,0,1728,2304&wid=600&hei=800&scl=2.88" style="  height: 350px; width: 300px;" alt="">
+        </div>
+        <div class="side">
+            <h1>Tony Tony Chopper</h1>
+            <p>
+                Description: <br> Tony Tony Chopper is the doctor of the Straw Hat Pirates. Chopper is a reindeer that ate a Devil Fruit called the Hito Hito no Mi. He came from Drum Island, which makes him the only member of the Straw Hat Pirate Crew
+                who was born on the Grand Line. Tony Tony Chopper | Heroes <br> https://hero.fandom.com › wiki › Tony_Tony_Chopper <br> Last known bounty (in Belly): 100 <br> Devil fruit: Hito Hito no Mi <br> Voiced by: Ikue Ōtani (Toei Animation), Kazue
+                Ikura (Toei Animation), Brina Palencia (Funimation) <br><br> Character Information <br> Birthday: December 24th <br> Age: 15 (debut) 17 (after timeskip) <br> Height: 90 cm (2'11¼ ") <br> Devil Fruit: Human-Human Fruit <br>
+
+
+            </p>
+
+        </div>
+        <div class="summary ">
+            <h3>Summary:</h3>
+            <p>
+                Vinsmoke Sanji (ヴィンスモーク・サンジ Vinsumōku Sanji), also known as "Black Leg " Sanji is a fictional character in the One Piece franchise created by Eiichiro Oda. A native to the North Blue, Sanji grew up as part of the Vinsmoke family under his father Vinsmoke
+                Judge, king of the Germa Kingdom, and mother Vinsmoke Sora Living under a grueling father who only saw Sanji as a soldier, he escapes to Baratie where he learns to cook under “Red Leg” Zeff and learns his fighting style, which is characterized
+                by the use of legs in combat. Sanji is the fifth member and the fourth to join Monkey D. Luffy’s pirate crew as cook after the battle against Don Kreig. Sanji currently has a bounty of Berrysymbol.gif330,000,000 after escaping Big Mom
+                from Whole Cake Island. His previous bounties were Berrysymbol.gif77,000,000 after the attack on Enies Lobby and Berrysymbol.gif177,000,000 after the events at the Dressrosa kingdom.
+            </p>
+        </div>
+
+    </div>
+
+    <div id="Zoro" class="castContent">
+        <div class="gif ">
+            <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864,0,1728,2304&wid=600&hei=800&scl=2.88 " style=" height: 350px; width: 300px; " alt=" ">
+        </div>
+        <div class="side ">
+            <h1>Roronoa Zoro</h1>
+            <p>
+                Description: <br> Roronoa Zoro, also known as "Pirate Hunter " Zoro, is a fictional character in the One Piece franchise created by Eiichiro Oda. In the story, Zoro is the first crewmate to join Monkey D. Luffy's crew after he is saved
+                from being executed at the Marine Base by Captain Morgan. Wikipedia Last known bounty (in Belly): 320,000,000 <br> Alias: Pirate Hunter Zoro <br> Created by: Eiichiro Oda <br> Voiced by: Kazuya Nakai (Toei Animation), MORE <br> Haki power:
+                Busoshoku Haki, Kenbunshoku Haki, MORE <br> Movies and TV shows: One Piece: The Desert Princess and the Pirates - Adventure in Alabasta, MORE <br> Birthday: November 11, 1503 (Scorpio) <br> Zodiac: Scorpio ♏ <br> Unique Trait: Haramaki
+                Three Swords <br> Current Status: Alive (Active) <br>
+
+
+            </p>
+
+        </div>
+        <div class="summary ">
+            <h3>Summary:</h3>
+            <p>
+                Roronoa Zoro (ロロノア・ゾロ, Roronoa Zoro, spelled as "Roronoa Zolo " in some English adaptations), also known as "Pirate Hunter " Zoro (海賊狩りのゾロ, Kaizoku-Gari no Zoro), is a fictional character in the One Piece franchise created by Eiichiro Oda. In the story,
+                Zoro is the first crewmate to join Monkey D. Luffy's crew after he is saved (by Luffy and Koby) from being executed at the Marine Base by Captain Morgan. He is the crew's combatant,[1] and one of the two swordsmen of the Straw Hat Pirates,
+                the other being Brook. As a native to the East Blue, he came from the village known as Shimotsuki, where he trained in a dojo and learned the one and two-sword styles (ittōryū and nitōryū), also he is proficient in both Armament Haki and
+                Observation Haki, as well as being one of the few known characters who possess Conquerors Haki. Zoro is uniquely known as an expert of Santōryū (Three Sword Style), where he wields a third sword with his mouth in combat. Throughout the
+                series, his primary sword is Wado Ichimonji, one of the World's 21 great swords that he inherited from a childhood friend Kuina, and is frequently the sword that he wields in his mouth, while the other two swords frequently change over
+                time and get better. He also has a habit of frequently going into the wrong locations which is a running gag throughout the whole series.
+            </p>
+        </div>
+
+    </div>
+    <div id="rubin" class="castContent">
+        <div class="gif ">
+            <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864,0,1728,2304&wid=600&hei=800&scl=2.88 " style=" height: 350px; width: 300px; " alt=" ">
+        </div>
+        <div class="side ">
+            <h1>Nico Robin</h1>
+            <p>
+                Description: <br> Nico Robin is a fictional character and one of the main female protagonists appearing in the manga series One Piece, created by manga artist Eiichiro Oda. <br> Last known bounty (in Belly): 130,000,000 <br> Devil fruit:
+                Hana Hana no Mi <br> Date of birth: February 6 <br> Created by: Eiichiro Oda <br> Voiced by: Yuriko Yamaguchi (Toei Animation), Nico Robin, also known by her epithet "Devil Child " and the "Light of the Revolution ", is the archaeologist
+                of the Straw Hat Pirates. She is the seventh member of the crew and the sixth to join, doing so at the end of the Arabasta Arc. <br> Stephanie Young Brehm (born April 3, 1973) is an American singer and voice actress. She's known for voicing:
+                Clare in Claymore, Nico Robin in One Piece and Olivier Mira Armstrong in Fullmetal Alchemist: Brotherhood.
+
+
+
+
+            </p>
+
+        </div>
+        <div class="summary ">
+            <h3>Summary:</h3>
+            <p>
+                Nico Robin (ニコ・ロビン, Niko Robin) is a fictional character and one of the main female protagonists appearing in the manga series One Piece, created by manga artist Eiichiro Oda. The character made her first appearance in the 114th chapter of the series,
+                which was first published in Japan in Shueisha's Weekly Shōnen Jump magazine on November 22, 1999. In the series, Robin is introduced as an antagonist, but eventually becomes the seventh member of the Straw Hat Pirates crew, captained
+                by Monkey D. Luffy. Acting as the group's archaeologist and historian, Robin is a Devil Fruit user who possess the power of the Flower-Flower Fruit, allowing her to sprout replicas of her limbs, and later her entire body, from any surface.
+                As the only survivor of the island of Ohara, Robin is the only known living person in the world of One Piece with the ability to read the ancient stones called Poneglyphs, something considered threatening by the World Government, which
+                forbids the practice. Robin has become extremely popular and somewhat of a breakout character in anime and manga fandom. She has also appeared in several adaptations based on the manga, including the anime television series in which she
+                is voiced by Yuriko Yamaguchi in the original Japanese language, as well as by Veronica Taylor and Stephanie Young in the English versions. She has also become a popular subject of cosplay, causing a trend in Japan where women attempted
+                to replicate her iconic costume.
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        function clickCast(evt, cityName) {
+            var i, castContent, viewCast;
+            castContent = document.getElementsByClassName("castContent");
+            var a = document.getElementById("description");
+            console.log(a);
+            a.style.display = "none";
+            for (i = 0; i < castContent.length; i++) {
+                castContent[i].style.display = "none ";
+            }
+            viewCast = document.getElementsByClassName("viewCast");
+            for (i = 0; i < viewCast.length; i++) {
+                viewCast[i].className = viewCast[i].className.replace(" active ", " ");
+            }
+            document.getElementById(cityName).style.display = "block ";
+            evt.currentTarget.className += " active ";
+        }
+    </script>
+</body>
+
+</html>
